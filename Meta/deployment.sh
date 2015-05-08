@@ -65,6 +65,15 @@ else
 	exit 1
 fi
 
+echo "Cloning t3jquery repository https://github.com/TYPO3-svn-archive/t3jquery.git"
+git clone https://github.com/TYPO3-svn-archive/t3jquery.git --single-branch --branch master typo3conf/ext/t3jquery &> /dev/null
+if [ $? -eq 0 ]; then
+	echo -e "${green}Cloned t3jquery repository ${endColor}"
+else
+	echo -e "${RED}ERROR: Failed to clone t3jquery repository ${endColor}"
+	exit 1
+fi
+
 echo "Cloning myt3base repository https://github.com/damisau/myt3base.git"
 git clone https://github.com/damisau/myt3base.git --single-branch --branch master typo3conf/ext/monsunmedia_base &> /dev/null
 if [ $? -eq 0 ]; then
@@ -121,11 +130,20 @@ else
 	echo -e "${RED}ERROR: Failed to install recycler extension ${endColor}"
 fi
 
+php typo3/cli_dispatch.phpsh extbase extension:install t3jquery
+if [ $? -eq 0 ]; then
+	echo -e "${green}Installed t3jquery extension${endColor}"
+else
+	echo -e "${RED}ERROR: Failed to install t3jquery extension ${endColor}"
+fi
+
 php typo3/cli_dispatch.phpsh extbase extension:install monsunmedia_base
 if [ $? -eq 0 ]; then
 	echo -e "${green}Installed monsunmedia_base extension${endColor}"
 else
 	echo -e "${RED}ERROR: Failed to install monsunmedia_base extension ${endColor}"
 fi
+
+cp typo3conf/ext/monsunmedia_base/Configuration/RealURL/_.htaccess ./.htacess
 
 echo -e "${green}Done.${endColor}"
