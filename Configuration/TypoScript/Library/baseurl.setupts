@@ -1,0 +1,11 @@
+[globalVar = LIT:development = {$monsunmedia_base.configuration.configuration.settings.currentenvironment}]
+	page.config.baseURL = {$monsunmedia_base.configuration.configuration.settings.baseurldevelopment}
+[global]
+
+[globalVar = LIT:staging = {$monsunmedia_base.configuration.configuration.settings.currentenvironment}]
+	page.config.baseURL = {$monsunmedia_base.configuration.configuration.settings.baseurlstaging}
+[global]
+
+[globalVar = LIT:production = {$monsunmedia_base.configuration.configuration.settings.currentenvironment}]
+	page.config.baseURL = {$monsunmedia_base.configuration.configuration.settings.baseurlproduction}
+[global]

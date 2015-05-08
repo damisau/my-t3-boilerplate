@@ -1,4 +1,17 @@
 # customsubcategory=resources=Resources
+# customsubcategory=settings=Settings
+
+# cat=configuration,configuration/settings/;type=options[development,staging,production]; label= Current environment
+monsunmedia_base.configuration.configuration.settings.currentenvironment = development
+
+# cat=configuration,configuration/settings/;type=string; label= Environment development, the baseurl to be used for realurl
+monsunmedia_base.configuration.configuration.settings.baseurldevelopment =
+
+# cat=configuration,configuration/settings/;type=string; label= Environment staging, the baseurl to be used for realurl
+monsunmedia_base.configuration.configuration.settings.baseurlstaging =
+
+# cat=configuration,configuration/settings/;type=string; label= Environment production, the baseurl to be used for realurl
+monsunmedia_base.configuration.configuration.settings.baseurlproduction =
 
 # cat=configuration,configuration/resources/;type=string; label= CSS file: Name of the css file to be included (should be placed in Resources/Public/Stylesheets/)
 monsunmedia_base.configuration.configuration.resources.stylesheet = app.css

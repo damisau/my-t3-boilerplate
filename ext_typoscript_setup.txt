@@ -26,7 +26,6 @@ page {
 		absRefPrefix = /
 		prefixLocalAnchors = all
 		simulateStaticDocuments = 0
-		baseURL = {$monsunmedia_base}
 	}
 
 	includeCSS {
