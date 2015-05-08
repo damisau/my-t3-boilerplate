@@ -1,0 +1,4 @@
+# customsubcategory=resources=Resources
+
+# cat=configuration,configuration/resources/;type=string; label= CSS file: Name of the css file to be included (should be placed in Resources/Public/Stylesheets/)
+monsunmedia_base.configuration.configuration.resources.stylesheet = app.css

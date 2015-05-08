@@ -30,7 +30,7 @@ page {
 	}
 
 	includeCSS {
-		file1 = EXT:monsunmedia_base/Resources/Public/Stylesheets/app.css
+		file1 = EXT:monsunmedia_base/Resources/Public/Stylesheets/{$monsunmedia_base.configuration.configuration.resources.stylesheet}
 	}
 
 	10 = FLUIDTEMPLATE
