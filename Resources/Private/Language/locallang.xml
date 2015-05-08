@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for extension monsunmedia_base</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="onecolumncontent">Titelbild, Inhalt einspaltig</label>
+			<label index="twocolumncontent">Titelbild, Inhalt zweispaltig</label>
+			<label index="newstemplatelabelnewslisting">News (Liste)</label>
+			<label index="newstemplatelabelnewsdetail">News (Detail)</label>
+			<label index="newstemplatelabeljobslisting">Jobs (Liste)</label>
+			<label index="newstemplatelabeljobsdetail">Jobs (Detail)</label>
+			<label index="newstemplatenojobsfound">No jobs found</label>
+		</languageKey>
+	</data>
+</T3locallang>

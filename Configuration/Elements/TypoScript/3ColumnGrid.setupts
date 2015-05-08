@@ -1,0 +1,22 @@
+lib.gridelements {
+	3columngrid < .defaultGridSetup
+	3columngrid {
+		wrap = <div class="3columngrid">|</div>
+		columns.0 {
+			renderObj =< tt_content
+			wrap = <div class="3columngrid-column 3columngrid-column_0">|</div>
+		}
+
+		columns.1 {
+			renderObj =< tt_content
+			wrap = <div class="3columngrid-column 3columngrid-column_1">|</div>
+		}
+
+		columns.2 {
+			renderObj =< tt_content
+			wrap = <div class="3columngrid-column 3columngrid-column_2">|</div>
+		}
+	}
+}
+
+tt_content.gridelements_pi1.20.10.setup.3columngrid < lib.gridelements.3columngrid

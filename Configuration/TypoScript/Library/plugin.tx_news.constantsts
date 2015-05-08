@@ -1,0 +1,7 @@
+plugin.tx_news {
+	view {
+		templateRootPath = EXT:monsunmedia_base/Resources/Private/Extensions/News/Templates/
+		layoutRootPath = EXT:monsunmedia_base/Resources/Private/Extensions/News/Layouts/
+		partialRootPath = EXT:monsunmedia_base/Resources/Private/Extensions/News/Partials/
+	}
+}

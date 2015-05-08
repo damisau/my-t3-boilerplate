@@ -1,0 +1,14 @@
+lib.logo.header = IMAGE
+lib.logo.header {
+	file = {$monsunmedia_base.configuration.header.logo.file}
+	file.width = {$monsunmedia_base.configuration.header.logo.width}
+	file.height = {$monsunmedia_base.configuration.header.logo.height}
+	file.titleText = {$monsunmedia_base.configuration.header.logo.titleText}
+	file.altText = {$monsunmedia_base.configuration.header.logo.altText}
+	stdWrap.typolink {
+		parameter = {$monsunmedia_base.configuration.header.logo.linkPage}
+		parameter.insertData = 1
+		title = {$monsunmedia_base.configuration.header.logo.titleText}
+		ATagParams = class=""
+	}
+}

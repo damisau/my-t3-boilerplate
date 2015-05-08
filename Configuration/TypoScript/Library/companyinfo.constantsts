@@ -1,0 +1,24 @@
+# #
+# # Contact Information
+# #
+
+# cat=contactinfo; type=string; label= Contact info: The name of the company
+monsunmedia_base.configuration.contactInfo.companyName = Mustermann GmbH
+
+# cat=contactinfo; type=string; label= Contact info: The street address of the company
+monsunmedia_base.configuration.contactInfo.streetAddress = Mustergasse 134a
+
+# cat=contactinfo; type=string; label= Contact info: The zip code
+monsunmedia_base.configuration.contactInfo.zip = 49080
+
+# cat=contactinfo; type=string; label= Contact info: The city
+monsunmedia_base.configuration.contactInfo.city = Osnabrück
+
+# cat=contactinfo; type=string; label= Contact info: The main phone number
+monsunmedia_base.configuration.contactInfo.phone = 03542/456789 - 0
+
+# cat=contactinfo; type=string; label= Contact info: The company fax, if applicable
+monsunmedia_base.configuration.contactInfo.fax = 03542/456789 - 9
+
+# cat=contactinfo; type=string; label= Contact info: The main contact e-mail address
+monsunmedia_base.configuration.contactInfo.email = info@mustermann.com

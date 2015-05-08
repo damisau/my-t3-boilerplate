@@ -1,0 +1,57 @@
+# customsubcategory=topmenu=Top Menu
+# customsubcategory=mainmenu=Main Menu
+# customsubcategory=breadcrumb=Breadcrumb menu
+
+# #
+# # Main menu
+# #
+
+# cat=menu,menu/mainmenu/;type=string; label= Menu top: Exclude uid list (12,13,...)
+monsunmedia_base.configuration.menu.main.excludeUidList =
+
+# cat=menu,menu/mainmenu/;type=string; label= Menu top: Wrap the <ul> with the following class:
+monsunmedia_base.configuration.menu.main.ulWrapperClass = main
+
+# cat=menu,menu/mainmenu/;type=string; label= Menu top: Add prefix for first level
+monsunmedia_base.configuration.menu.main.prefixFirstLevel =
+
+# cat=menu,menu/mainmenu/;type=string; label= Menu top: Add prefix for second level
+monsunmedia_base.configuration.menu.main.prefixSecondLevel =
+
+# #
+# # Top menu
+# #
+
+# cat=menu,menu/topmenu/;type=string; label= Menu top: Exclude uid list (12,13,...)
+monsunmedia_base.configuration.menu.top.excludeUidList =
+
+# cat=menu,menu/topmenu/;type=int+; label= Menu top: Container pid of the menu items
+monsunmedia_base.configuration.menu.top.containerPid = 4
+
+# cat=menu,menu/topmenu/;type=options[0,1]; label= Menu top: Include 'not in menu' items
+monsunmedia_base.configuration.menu.top.includeNotInMenu = 0
+
+# cat=menu,menu/topmenu/;type=string; label= Menu top: Wrap the <ul> with the following class:
+monsunmedia_base.configuration.menu.top.ulWrapperClass = TopMenu
+
+# cat=menu,menu/topmenu/;type=string; label= Menu top: Add prefix e.g. to add icons
+monsunmedia_base.configuration.menu.top.prefix =
+
+# cat=menu,menu/topmenu/;type=string; label= Menu top: Add a divider between items
+monsunmedia_base.configuration.menu.top.divider =
+
+# #
+# # Breadcrumb
+# #
+# cat=menu,menu/breadcrumb/;type=string; label= Breadcrumb: Add prefix e.g. to add icons
+monsunmedia_base.configuration.menu.breadcrumb.prefix =
+
+# cat=menu,menu/breadcrumb/;type=string; label= Breadcrumb: Add a divider between items
+monsunmedia_base.configuration.menu.breadcrumb.divider =
+
+# cat=menu,menu/breadcrumb/;type=string; label= Breadcrumb: Css classes to be added to the <ul>
+monsunmedia_base.configuration.menu.breadcrumb.cssClasses =
+
+
+
+

@@ -1,0 +1,16 @@
+{namespace n=Tx_News_ViewHelpers}
+<f:layout name="General" />
+<!--
+	=====================
+		Templates/News/List.html
+-->
+
+<f:section name="content">
+	<f:if condition="{news}">
+		<f:switch expression="{settings.templateLayout}">
+			<f:case value="10"><f:render partial="List/NewsList" arguments="{news:news}" /></f:case>
+			<f:case value="30"><f:render partial="List/JobsList" arguments="{news:news}" /></f:case>
+		</f:switch>
+	</f:if>
+</f:section>
+

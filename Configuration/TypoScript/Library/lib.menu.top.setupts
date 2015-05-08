@@ -1,0 +1,18 @@
+lib.menu.top = HMENU
+lib.menu.top {
+	special = directory
+	special.value = {$monsunmedia_base.configuration.menu.top.containerPid}
+	includeNotInMenu = {$monsunmedia_base.configuration.menu.top.includeNotInMenu}
+	excludeUidList = {$monsunmedia_base.configuration.menu.top.excludeUidList}
+	wrap = <ul class="{$monsunmedia_base.configuration.menu.top.ulWrapperClass}">|</ul>
+	1 = TMENU
+	1 {
+		NO.wrapItemAndSub.insertData = 1
+		NO.wrapItemAndSub = <li class="state-no uid-{field:uid} point-{register:count_MENUOBJ} first">{$monsunmedia_base.configuration.menu.top.prefix}|</li>{$monsunmedia_base.configuration.menu.top.divider}|*|<li class="state-no uid-{field:uid} point-{register:count_MENUOBJ} middle">{$monsunmedia_base.configuration.menu.top.prefix}|</li>{$monsunmedia_base.configuration.menu.top.divider}|*|<li class="state-no uid-{field:uid} point-{register:count_MENUOBJ} last">{$monsunmedia_base.configuration.menu.top.prefix}|</li>
+
+		ACT < .NO
+		ACT = 1
+		ACT.wrapItemAndSub.insertData = 1
+		ACT.wrapItemAndSub = <li class="state-no uid-{field:uid} point-{register:count_MENUOBJ} first">{$monsunmedia_base.configuration.menu.top.prefix}|</li>{$monsunmedia_base.configuration.menu.top.divider}|*|<li class="state-no uid-{field:uid} point-{register:count_MENUOBJ} middle">{$monsunmedia_base.configuration.menu.top.prefix}|</li>{$monsunmedia_base.configuration.menu.top.divider}|*|<li class="state-no uid-{field:uid} point-{register:count_MENUOBJ} last">{$monsunmedia_base.configuration.menu.top.prefix}|</li>
+	}
+}

@@ -1,0 +1,39 @@
+<f:layout name="Default"/>
+<f:section name="Main">
+
+	<header role="banner">
+		<div clas="SiteLogo SiteLogo_header">
+			<f:cObject typoscriptObjectPath="lib.logo.header"></f:cObject>
+		</div>
+
+		<div class="Menu Menu_top">
+			<f:cObject typoscriptObjectPath="lib.menu.top"></f:cObject>
+		</div>
+
+		<nav class="Menu Menu_main">
+			<f:cObject typoscriptObjectPath="lib.menu.main"></f:cObject>
+		</nav>
+	</header>
+
+	<div class="Breadcrumb">
+		<f:cObject typoscriptObjectPath="lib.menu.breadcrumb"></f:cObject>
+	</div>
+
+	<section class="HeroSection">
+		<f:cObject typoscriptObjectPath="lib.content.top"></f:cObject>
+	</section>
+
+	<main role="main" style="display:block;">
+		<f:cObject typoscriptObjectPath="lib.content.main"></f:cObject>
+	</main>
+
+	<f:if condition="{layout}==1">
+		<aside>
+			<f:cObject typoscriptObjectPath="lib.content.aside"></f:cObject>
+		</aside>
+	</f:if>
+
+	<footer role="contentinfo">
+		<f:cObject typoscriptObjectPath="lib.footer"></f:cObject>
+	</footer>
+</f:section>

@@ -1,0 +1,4 @@
+# ======================================================================
+# Include Constants from library
+# ======================================================================
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:monsunmedia_base/Configuration/TypoScript/Library/" extensions="constantsts">

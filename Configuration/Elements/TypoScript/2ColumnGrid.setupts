@@ -1,0 +1,17 @@
+lib.gridelements {
+	2columngrid < .defaultGridSetup
+	2columngrid {
+		wrap = <div class="2columngrid">|</div>
+		columns.0 {
+			renderObj =< tt_content
+			wrap = <div class="2columngrid-column 2columngrid-column_0">|</div>
+		}
+
+		columns.1 {
+			renderObj =< tt_content
+			wrap = <div class="2columngrid-column 2columngrid-column_1">|</div>
+		}
+	}
+}
+
+tt_content.gridelements_pi1.20.10.setup.2columngrid < lib.gridelements.2columngrid

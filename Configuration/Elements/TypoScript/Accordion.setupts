@@ -1,0 +1,13 @@
+lib.gridelements {
+	accordion {
+		cObject = FLUIDTEMPLATE
+		cObject {
+			file = EXT:monsunmedia_base/Resources/Private/Partials/Accordion.html
+		}
+		columns.0 {
+			renderObj =< tt_content
+		}
+	}
+}
+
+tt_content.gridelements_pi1.20.10.setup.accordion < lib.gridelements.accordion

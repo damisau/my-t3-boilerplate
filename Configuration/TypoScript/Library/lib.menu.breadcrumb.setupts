@@ -1,0 +1,38 @@
+lib.menu.breadcrumb = COA
+lib.menu.breadcrumb {
+	wrap = <ul id="menuBreadcrumb" class="{$monsunmedia_base.configuration.menu.breadcrumb.cssClasses}">|</ul>
+	10 = HMENU
+	10 {
+		special = rootline
+		special.range = 0|-1
+		includeNotInMenu = {$monsunmedia_base.configuration.menu.breadcrumb.includeNotInMenu}
+		excludeUidList = {$monsunmedia_base.configuration.menu.breadcrumb.excludeUidList}
+		1 = TMENU
+		1 {
+			noBlur = 1
+			NO {
+				stdWrap.htmlSpecialChars = 1
+				doNotLinkIt = |*| 0 |*| 1
+				linkWrap = <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">|</li> |*| <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><span class="divider">{$monsunmedia_base.configuration.menu.breadcrumb.divider}</span>|</li> |*| <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="active"><span class="divider">{$monsunmedia_base.configuration.menu.breadcrumb.divider}</span>|</li>
+				ATagParams = itemprop="url" title="{field:subtitle//field:title}"
+				ATagParams.insertData = 1
+				stdWrap.wrap = <span itemprop="title">|</span>
+			}
+			wrap = <li class="prefix"><span>{$monsunmedia_base.configuration.menu.breadcrumb.prefix}</span></li>|
+		}
+	}
+}
+
+[globalVar = GP:tx_news_pi1|news > 0]
+lib.menu.breadcrumb.20 = RECORDS
+lib.menu.breadcrumb.20 {
+  dontCheckPid = 1
+  tables = tx_news_domain_model_news
+  source.data = GP:tx_news_pi1|news
+  source.intval = 1
+  conf.tx_news_domain_model_news = TEXT
+  conf.tx_news_domain_model_news.field = title
+  conf.tx_news_domain_model_news.htmlSpecialChars = 1
+  wrap = <li>|</li>
+}
+[end]

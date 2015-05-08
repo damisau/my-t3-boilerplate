@@ -1,0 +1,68 @@
+lib.footer.contactinfo = COA
+lib.footer.contactinfo {
+	50 = TEXT
+	50 {
+		insertData = 1
+		value = {$monsunmedia_base.configuration.contactInfo.companyName}
+		wrap = <span class="Footer-contactinfo-companyName">|</span>
+	}
+
+	60 = TEXT
+	60 {
+		insertData = 1
+		value = {$monsunmedia_base.configuration.contactInfo.streetAddress}
+		wrap = <span class="Footer-contactinfo-streetAddress">|</span>
+	}
+
+	70 = TEXT
+	70 {
+		insertData = 1
+		value = {$monsunmedia_base.configuration.contactInfo.zip}
+		wrap = <span class="Footer-contactinfo-zip">|</span>
+	}
+
+	80 = TEXT
+	80 {
+		insertData = 1
+		value = {$monsunmedia_base.configuration.contactInfo.city}
+		wrap = <span class="Footer-contactinfo-city">|</span>
+	}
+
+	90 = TEXT
+	90 {
+		insertData = 1
+		value = {$monsunmedia_base.configuration.contactInfo.phone}
+		wrap = <span class="Footer-contactinfo-phone">|</span>
+	}
+
+	100 = TEXT
+	100 {
+		insertData = 1
+		value = {$monsunmedia_base.configuration.contactInfo.phone}
+		wrap = <span class="Footer-contactinfo-fax">|</span>
+	}
+
+	110 = TEXT
+	110 {
+		insertData = 1
+		value = {$monsunmedia_base.configuration.contactInfo.phone}
+		wrap = <span class="Footer-contactinfo-email">|</span>
+	}
+}
+
+lib.footer.copyright = TEXT
+lib.footer.copyright {
+	data = date:U
+	strftime = %Y
+	noTrimWrap= |<span class="Footer-copyright">| {$monsunmedia_base.configuration.contactInfo.companyName}</span>|
+}
+
+lib.footer = COA
+lib.footer {
+
+	50 < lib.footer.contactinfo
+	50.wrap = <div class="Footer-contactinfo">|</div>
+
+	60 < lib.footer.copyright
+	60.outerWrap = <div class="Footer-copyright-wrap">|</div>
+}

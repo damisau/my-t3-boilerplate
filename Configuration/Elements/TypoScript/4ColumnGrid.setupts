@@ -1,0 +1,27 @@
+lib.gridelements {
+	4columngrid < .defaultGridSetup
+	4columngrid {
+		wrap = <div class="4columngrid">|</div>
+		columns.0 {
+			renderObj =< tt_content
+			wrap = <div class="4columngrid-column 4columngrid-column_0">|</div>
+		}
+
+		columns.1 {
+			renderObj =< tt_content
+			wrap = <div class="4columngrid-column 4columngrid-column_1">|</div>
+		}
+
+		columns.2 {
+			renderObj =< tt_content
+			wrap = <div class="4columngrid-column 4columngrid-column_2">|</div>
+		}
+
+		columns.3 {
+			renderObj =< tt_content
+			wrap = <div class="4columngrid-column 4columngrid-column_3">|</div>
+		}
+	}
+}
+
+tt_content.gridelements_pi1.20.10.setup.4columngrid < lib.gridelements.4columngrid

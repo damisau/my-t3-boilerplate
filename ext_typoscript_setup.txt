@@ -1,0 +1,61 @@
+# ======================================================================
+# Page setup
+# ======================================================================
+page = PAGE
+page {
+	typeNum = 0
+	config {
+		#disable comments around ces
+		disablePrefixComment = true
+
+		#disable caching during development, enable in production or testing indexed_search!
+		no_cache = 1
+
+		#headers and metadata
+		doctype = html5
+		htmlTag_langKey = de
+		renderCharset = utf-8
+		metaCharset = utf-8
+		pageNotFound_handling = 1
+
+		admPanel = 1
+		debug = 1
+
+		#realurl configuration
+		tx_realurl_enable = 1
+		absRefPrefix = /
+		prefixLocalAnchors = all
+		simulateStaticDocuments = 0
+		baseURL = {$monsunmedia_base}
+	}
+
+	includeCSS {
+		file1 = EXT:monsunmedia_base/Resources/Public/Stylesheets/app.css
+	}
+
+	10 = FLUIDTEMPLATE
+	10 {
+		file = EXT:monsunmedia_base/Resources/Private/Templates/Default.html
+		layoutRootPath = EXT:monsunmedia_base/Resources/Private/Layouts/
+		partialRootPath = EXT:monsunmedia_base/Resources/Private/Partials/
+
+		variables {
+			layout = TEXT
+			layout {
+				data = levelfield:-1, backend_layout_next_level, slide
+				override.field = backend_layout
+			}
+		}
+	}
+}
+
+#remove csc-default wrappers
+tt_content.stdWrap.innerWrap >
+#remove default headline classes
+lib.stdheader.stdWrap.dataWrap >
+
+# ======================================================================
+# Include Libraries
+# ======================================================================
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:monsunmedia_base/Configuration/TypoScript/Library/" extensions="setupts">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:monsunmedia_base/Configuration/Elements/TypoScript/" extensions="setupts">

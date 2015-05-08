@@ -1,0 +1,9 @@
+TCEFORM.pages.backend_layout.altLabels.1 = LLL:EXT:monsunmedia_base/Resources/Private/Language/locallang.xml:twocolumncontent
+TCEFORM.pages.backend_layout.altLabels.2 = LLL:EXT:monsunmedia_base/Resources/Private/Language/locallang.xml:onecolumncontent
+
+tx_news.templateLayouts {
+	10 = LLL:EXT:monsunmedia_base/Resources/Private/Language/locallang.xml:newstemplatelabelnewslisting
+	20 = LLL:EXT:monsunmedia_base/Resources/Private/Language/locallang.xml:newstemplatelabelnewsdetail
+	30 = LLL:EXT:monsunmedia_base/Resources/Private/Language/locallang.xml:newstemplatelabeljobslisting
+	40 = LLL:EXT:monsunmedia_base/Resources/Private/Language/locallang.xml:newstemplatelabeljobsdetail
+}

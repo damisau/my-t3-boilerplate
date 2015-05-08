@@ -1,0 +1,17 @@
+lib.content.main = COA
+lib.content.main {
+	50 < styles.content.get
+	50.select.where = colPos=0
+}
+
+lib.content.top = COA
+lib.content.top {
+	50 < styles.content.get
+	50.select.where = colPos=1
+}
+
+lib.content.aside = COA
+lib.content.aside {
+	50 < styles.content.get
+	50.select.where = colPos=2
+}

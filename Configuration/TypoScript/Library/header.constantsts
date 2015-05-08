@@ -1,0 +1,24 @@
+# #customcategory=header=Theme: Header settings
+# customsubcategory=logo=Site Logo
+
+# #
+# # Header in Logo
+# #
+
+# cat=header,header/logo/; label= Header logo: location of the file (fileadmin/....)
+monsunmedia_base.configuration.header.logo.file = fileadmin/monsunmedia_base/Images/logo.jpg
+
+# cat=header,header/logo/; type=int+; label= Header logo: width of the logo
+monsunmedia_base.configuration.header.logo.width = 0
+
+# cat=header,header/logo/; type=int+; label= Header logo: height of the logo
+monsunmedia_base.configuration.header.logo.height = 0
+
+# cat=header,header/logo/; type=string; label= Header logo: title text of the link
+monsunmedia_base.configuration.header.logo.titleText =
+
+# cat=header,header/logo/; type=string; label= Header logo: alt text of the link
+monsunmedia_base.configuration.header.logo.altText =
+
+# cat=header,header/logo/; type=int+; label= Header logo: target page of the link
+monsunmedia_base.configuration.header.logo.linkPage = 1
