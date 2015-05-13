@@ -4,7 +4,7 @@
 page = PAGE
 page {
 	typeNum = 0
-	shortcutIcon = favicon.ico
+	shortcutIcon = fileadmin/favicon.ico
 	config {
 		#disable comments around ces
 		disablePrefixComment = true
@@ -31,6 +31,10 @@ page {
 
 	includeCSS {
 		file1 = EXT:monsunmedia_base/Resources/Public/Stylesheets/{$monsunmedia_base.configuration.configuration.resources.stylesheet}
+	}
+
+	includeJSFooter {
+		accordion = EXT:monsunmedia_base/Resources/Public/Javascripts/accordion.js
 	}
 
 	10 = FLUIDTEMPLATE
