@@ -1,3 +1,18 @@
 body {
 	outline: 1px solid red;
 }
+
+/*#############################################################*/
+/* Accordion example */
+/*#############################################################*/
+.panel-body {
+	max-height: 2000px;
+	overflow: hidden;
+	transform-origin: 0 50%;
+	transition: all .3s ease-in;
+}
+
+.panel-body_hidden {
+	max-height: 0;
+	transform: scale(0);
+}
