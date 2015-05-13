@@ -4,6 +4,7 @@
 page = PAGE
 page {
 	typeNum = 0
+	shortcutIcon = favicon.ico
 	config {
 		#disable comments around ces
 		disablePrefixComment = true
