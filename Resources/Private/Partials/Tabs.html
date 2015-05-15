@@ -1,0 +1,16 @@
+{namespace theme=BirgerFuehne\MonsunmediaBase\ViewHelpers}
+<section class="TabsSection">
+	<ul class="tabs">
+		<f:for each="{data.tx_gridelements_view_children}" as="tab" iteration="tabnumber">
+			<li rel="tab{tabnumber.cycle}" class="{f:if(condition:'{tabnumber.isFirst}',then:'active', else: 'inactive')}">{tab.header}</li>
+		</f:for>
+	</ul>
+	<div class="tab_container">
+		<f:for each="{data.tx_gridelements_view_children}" as="tab" iteration="tabnumber">
+			<h3 class="tab_drawer_heading {f:if(condition:'{tabnumber.isFirst}', then:'d_active')}" rel="tab{tabnumber.cycle}">{tab.header}</h3>
+			<div id="tab{tabnumber.cycle}" class="tab_content">
+				<f:format.raw>{theme:arrayIndex(object: data, index: 'tx_gridelements_view_child_{tab.uid}')}</f:format.raw>
+			</div>
+		</f:for>
+	</div>
+</section>

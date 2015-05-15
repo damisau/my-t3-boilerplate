@@ -35,6 +35,7 @@ page {
 
 	includeJSFooter {
 		accordion = EXT:monsunmedia_base/Resources/Public/Javascripts/accordion.js
+		tabs = EXT:monsunmedia_base/Resources/Public/Javascripts/tabs.js
 	}
 
 	10 = FLUIDTEMPLATE
