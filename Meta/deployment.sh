@@ -74,8 +74,8 @@ else
 	exit 1
 fi
 
-echo "Cloning myt3base repository https://github.com/damisau/myt3base.git"
-git clone https://github.com/damisau/myt3base.git --single-branch --branch master typo3conf/ext/monsunmedia_base &> /dev/null
+echo "Cloning myt3base repository https://github.com/monsun-media/t3-cms-boilerplate.git"
+git clone https://github.com/monsun-media/t3-cms-boilerplate.git --single-branch --branch master typo3conf/ext/monsunmedia_base &> /dev/null
 if [ $? -eq 0 ]; then
 	echo -e "${green}Cloned myt3base repository ${endColor}"
 else
